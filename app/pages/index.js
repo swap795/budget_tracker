@@ -1,4 +1,6 @@
 import Head from "next/head";
+import styled from "styled-components";
+import { AddCircle } from "@mui/icons-material";
 
 export default function Home() {
   return (
@@ -9,9 +11,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>Budget Tracker</h1>
-      </main>
+      <Main>
+        <AddCircle />
+      </Main>
     </div>
   );
 }
+
+const Main = styled.main`
+  padding: 0 2rem;
+`;
